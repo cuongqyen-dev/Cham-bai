@@ -2,7 +2,7 @@ import { GoogleGenAI, Schema, Type } from "@google/genai";
 import { GradingResult, Annotation } from "../types";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 // Define the response schema for structured output
 const annotationSchema: Schema = {
